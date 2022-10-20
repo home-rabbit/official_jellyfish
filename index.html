@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+  <link href="js/lity/lity.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/loading.min.css" />
+  <link rel="stylesheet" href="css/transition.min.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/lity/lity.js"></script>
+  <script src="js/internal.js"></script>
+  <script src="js/jq-i18n/jquery.i18n.js"></script>
+  <script src="js/jq-i18n/jquery.i18n.messagestore.js"></script>
+  <script src="js/jq-i18n/jquery.i18n.fallbacks.js"></script>
+  <script src="js/jq-i18n/jquery.i18n.parser.js"></script>
+  <script src="js/jq-i18n/jquery.i18n.emitter.js"></script>
+  <script src="js/jq-i18n/jquery.i18n.language.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/web3.js"></script>
+  <!-- Web3-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1-rc.0/web3.min.js"></script>
+  <link rel="shortcut icon" href="images/ico.ico" />
+  <title>JellyFish Wonderland</title>
+</head>
+
+<body>
+
+
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 t-align-center">
+          <img src="images/logo.png" alt="" class="ldx">
+          <select id="i18n-selector">
+            <option value="en">English</option>
+            <option value="cn">简中</option>
+            <option value="zh-TW">繁中</option>
+          </select>
+          <div class="connectParent">
+            <a href="javascript:;" data-i18n="connect" class="connect">CONNECT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- whitepaper float-->
+
+  <div class="float-box">
+    <a href="https://jellyfish.ml/pdf/pdf.pdf" class="flen float ldx ldx-wander-v" target="_blank"><img
+        src="images/float-en.png" alt=""></a>
+    <a href="https://jellyfish.ml/pdf/pdf-cn.pdf" class="flcn float ldx ldx-wander-v" target="_blank"><img
+        src="images/float-cn.png" alt=""></a>
+    <a href="https://jellyfish.ml/pdf/pdf-zhtw.pdf" class="flzh-TW float ldx ldx-wander-v" target="_blank"><img
+        src="images/float-zhtw.png" alt=""></a>
+  </div>
+  
+
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 t-align-center m_10">
+          <div class="container">
+            <div class="row">
+              <!-- time area -->
+              <div class="col-md-7 timer gradient-border">
+                <div class="title">
+                  <!-- <span data-i18n="start-time">starting time</span> -->
+                  <span data-i18n="run-time">Running time</span>
+                </div>
+                <!-- time -->
+                <ul id="countdown">
+                  <li id="days">
+                    <div class="number">00</div>
+                    <div class="label" data-i18n="Days">Days</div>
+                  </li>
+                  <li id="hours">
+                    <div class="number">05</div>
+                    <div class="label" data-i18n="Hours">Hours</div>
+                  </li>
+                  <li id="minutes">
+                    <div class="number">00</div>
+                    <div class="label" data-i18n="Minutes">Minutes</div>
+                  </li>
+                  <li id="seconds">
+                    <div class="number">00</div>
+                    <div class="label" data-i18n="Seconds">Seconds</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p style="color: #fff;font-size: 1.375em;" data-i18n="info">The BNB Reward Pool with the 8% daily return and
+            13% referral
+            rewards and lowest dev fee</p>
+        </div>
+        <div class="col-md-6 m_20">
+          <div class="amo-box-g">
+            <div class="data-row">
+              <span class="title" data-i18n="contract">
+                Contract
+              </span>
+              <span class="value contractValue">
+                0 BNB
+              </span>
+            </div>
+            <div class="data-row">
+              <span class="title" data-i18n="wallet">
+                Wallet
+              </span>
+              <span class="value walletValue">
+                0 BNB
+              </span>
+            </div>
+            <div class="data-row">
+              <span class="title" data-i18n="yourRabbit">
+                Your JellyFish
+              </span>
+              <span class="value rabbitValue">
+                0 <span data-i18n="Rabbit">JellyFish</span>
+              </span>
+            </div>
+            <div class="data-input m_20">
+              <input class="ant-input price" type="text" value="0">
+              <span class="">BNB</span>
+            </div>
+            <a href="javascript:;" class="btn01 m_20 rabbitCreate" data-i18n="rabbitCreate">JellyFish Create</a>
+            <div class="data-row">
+              <span class="title" data-i18n="YourRewards">
+                Your Rewards
+              </span>
+              <span class="value rewardsValue">
+                0 BNB
+              </span>
+            </div>
+            <div style="display: flex;justify-content: space-between;">
+              <a href="javascript:;" class="btn02 m_20 divide" data-i18n="Divide">Divide</a>
+              <a href="javascript:;" class="btn02 m_20 merge" data-i18n="Merge">Merge</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 m_40">
+          <div class="amo-box-p">
+            <div class="data-title" data-i18n="Nutrient">
+              Nutrient
+            </div>
+
+            <div class="row m_20" style="display: flex;align-items: center;">
+              <div class="col-4">
+                <img src="images/amo.png" alt="" class="ldx ldx-wander-v">
+              </div>
+              <div class="col-8">
+                <div class="data-row2">
+                  <span class="title" data-i18n="Daily">
+                    Daily Return
+                  </span>
+                  <span class="value">
+                    8%
+                  </span>
+
+                </div>
+                <div class="data-row2">
+                  <span class="title" data-i18n="Apr">
+                    APR
+                  </span>
+                  <span class="value">
+                    2920%
+                  </span>
+
+                </div>
+                <div class="data-row2">
+                  <span class="title" data-i18n="Devfee">
+                    Dev Fee
+                  </span>
+                  <span class="value">
+                    3%
+                  </span>
+
+                </div>
+              </div>
+            </div>
+            <div class="data-title" data-i18n="Referral">
+              Referral Link
+            </div>
+            <p style="color: #fff;font-size: 1.375em;margin-bottom: 10px;" data-i18n="Ref-info">Earn 13% of the BNB used
+              to Feed Rabbit
+              from anyone who uses your referral link</p>
+
+            <!-- <a href="#" class="btn03 m_20" data-i18n="connectWallet">CONNECT WALLET</a> -->
+            <div class="data-address m_30">
+              <p class="ellipsis referrals">https://jellyfish.gq/</p>
+              <a href="javascript:;" data-i18n="copy" class="copyButton">COPY</a>
+            </div>
+
+
+            <div class="data-row2">
+              <span class="title" data-i18n="invitees">
+                Your Invitees
+              </span>
+              <span class="value invitees">
+                0
+              </span>
+
+            </div>
+            <div class="data-row2">
+              <span class="title" data-i18n="rebate">
+                Your rebate
+              </span>
+              <span class="value rebate">
+                0 BNB
+              </span>
+
+            </div>
+          </div>
+        
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer class="m_20">
+    <div class="link">
+      <a href="https://bscscan.com/address/0x0bfe7f409e0e6c8a87cd665be00712c129f697d3" target="_blank">
+        <img src="images/bsc.png" alt="">
+      </a>
+      <a href="https://twitter.com/jellyfish_game" target="_blank">
+        <img src="images/twitter.png" alt="">
+      </a>
+      <a href="https://t.me/+"  target="_blank">
+        <img src="images/tele.png" alt="">
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    function updateText() {
+      var i18n = $.i18n();
+      var language = $("#i18n-selector").val();
+
+      i18n.locale = language;
+      i18n.load("i18n/" + i18n.locale + ".json", i18n.locale)
+        .done(function () {
+          $("[data-i18n]").i18n();
+        });
+    }
+    // Enable debug
+    $.i18n.debug = true;
+
+    $(document).ready(function ($) {
+      "use strict";
+      updateText();
+    });
+
+    $("#i18n-selector").on("change", function () {
+      updateText();
+    });
+  </script>
+
+</body>
+
+</html>
