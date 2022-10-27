@@ -1,5 +1,0 @@
-﻿{
-  "Description": "Microsoft 365 網域擁有權的驗證檔案放置於網站根目錄",
-  "Domain": "jellyfish.gq",
-  "Id": "cdf0abff-edf0-4876-9b5d-0d9fdbf3fa34"
-}
